@@ -20,7 +20,7 @@ const GaleriaD = (props) =>  {
   return (
     <div className={classes.root}>
      <Typography align='center' gutterBottom variant='h4' color='primary'>
-            Joggers para Damas
+            Ropa para Damas
      </Typography>
 
       <Grid container spacing={1}>

@@ -55,7 +55,7 @@ const Principal = () => {
     return (
         <div className={classes.root}>
         <Typography align='center' gutterBottom variant='h4' color='primary'>
-           Bienvenido! Vea aqui nuestras novedades
+           Bienvenido! Vea aqui nuestra nueva produccion
         </Typography>
 
         <Grid container spacing={1} className={classes.epaciado} p={1}>
