@@ -6,8 +6,8 @@ background-position: -44px -50px;
 }
 
 #iefect:hover {
-    margin-top: 9px;
-    -webkit-transition: margin 0.5s ease-out;
+   opacity: 0.8;
+   transition: 2s ease all;
 }
 
 #tpresen:hover{
@@ -19,7 +19,6 @@ background-position: -44px -50px;
 
 
 #iefect2:hover{
-    margin-top: 3px;
-    -webkit-transition: margin 0.5s ease-out;
+    opacity: 0.8;
  
 }
