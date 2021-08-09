@@ -16,6 +16,7 @@ import {useStateValue} from '../StateProvider'
 import Box from '@material-ui/core/Box';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import { Fragment } from 'react';
+import Rating from '@material-ui/lab/Rating';
 
 
 
@@ -94,6 +95,7 @@ const [{user}, dispatch] = useStateValue();
 
 
       <CardActions disableSpacing>
+      <Rating name="read-only" value={arti.rating} readOnly />
       {user ? 
         <IconButton aria-label="agregar a carrito" onClick={() => addproducto(arti)} >
           <AddShoppingCart fontSize='large' />
