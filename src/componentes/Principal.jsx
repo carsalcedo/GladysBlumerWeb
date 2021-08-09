@@ -8,6 +8,7 @@ import Publicidad2 from '../img/publicidad 2.jpg';
 import Publicidad3 from '../img/publicidad 3.jpg';
 import Publicidad4 from '../img/publicidad 4.jpg';
 import Publicidad5 from '../img/publicidad 5.jpg';
+import Publicidad6 from '../img/publicidad 6.jpg';
 import contacto from '../img/tarjeta.jpg'
 import {Link} from "react-router-dom";
 import ButtonBases from './ButtonBases'
@@ -84,7 +85,7 @@ const Principal = () => {
             <Link to='/JoggerN'>   
             <IconButton  color="inherit">   
              <CardMedia >
-                <img src={Publicidad2} className={classes.image} borderColor="primary.main" id="iefect"/>
+                <img src={Publicidad6} className={classes.image} borderColor="primary.main" id="iefect"/>
              </CardMedia>   
              </IconButton>
              </Link>

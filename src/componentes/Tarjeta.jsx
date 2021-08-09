@@ -7,6 +7,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
+import Box from '@material-ui/core/Box';
+import Rating from '@material-ui/lab/Rating';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -73,6 +75,7 @@ const [{user}, dispatch] = useStateValue();
       </CardMedia>    
      
       <CardActions disableSpacing>
+      <Rating name="read-only" value={arti.rating} readOnly />
       {user ? 
         <IconButton aria-label="agregar a carrito" onClick={() => addproducto(arti)} >
           <AddShoppingCart fontSize='large' />

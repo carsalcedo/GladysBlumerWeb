@@ -15,6 +15,7 @@ import joggerD2 from './img/28.png';
 import joggerD3 from './img/29.png';
 import joggerD4 from './img/30.png';
 import joggerN2 from './img/joggerN2.jpg';
+import sn from './img/sn2.jpg';
 import salud4 from './img/salud4.jpg';
 import salud5 from './img/salud5.jpg';
 import salud6 from './img/salud6.jpg';
@@ -53,7 +54,7 @@ articulos:[
         productType: "Short",
         fecha: "Mayo 14, 2021",
         price: 5,
-        rating: 3,
+        rating: 4,
         image: short2,
         sexo: "varon",
         descripcion: "Joggers deportivos de excelente calidad para ejercitarse o estar comodamente en casa."
@@ -64,7 +65,7 @@ articulos:[
         productType: "Short",
         fecha: "Mayo 14, 2021",
         price: 5,
-        rating: 4,
+        rating: 2,
         image: short3,
         sexo: "varon",
         descripcion: "Joggers deportivos de excelente calidad para ejercitarse o estar comodamente en casa."
@@ -141,7 +142,7 @@ articulos:[
         productType: "joggerA",
         fecha: "Mayo 25, 2021",
         price: 9,
-        rating: 3,
+        rating: 2,
         image: joggerA2,
         sexo: "varon",
         descripcion: "Joggers deportivos de excelente calidad para ejercitarse o estar comodamente en casa."
@@ -163,7 +164,7 @@ articulos:[
         productType: "joggerA",
         fecha: "Mayo 25, 2021",
         price: 9,
-        rating: 3,
+        rating: 1,
         image: joggerA4,
         sexo: "varon",
         descripcion: "Joggers deportivos de excelente calidad para ejercitarse o estar comodamente en casa."
@@ -196,7 +197,7 @@ articulos:[
         productType: "joggerD",
         fecha: "Mayo 25, 2021",
         price: 8,
-        rating: 3,
+        rating: 5,
         image: joggerD3,
         sexo: "hembra",
         descripcion: "Joggers deportivos de excelente calidad para ejercitarse o estar comodamente en casa."
@@ -238,7 +239,7 @@ articulos:[
         productType: "salud",
         fecha: "febrero 01, 2021",
         price: 20,
-        rating: 3,
+        rating: 4,
         image: salud5,
         descripcion: "Paquete de 20 articulos de uso desechables"
     },
@@ -258,7 +259,7 @@ articulos:[
         productType: "salud",
         fecha: "febrero 01, 2021",
         price: 20,
-        rating: 3,
+        rating: 5,
         image: salud7,
         descripcion: "Paquete de 20 articulos de uso desechables"
     },
@@ -290,7 +291,7 @@ articulos:[
         productType: "licraD",
         fecha: "Junio 01, 2021",
         price: 10,
-        rating: 3,
+        rating: 4,
         image: licra3,
         sexo: "hembra",
         descripcion: "Licras para damas adaptadas a su estilo y comodidad"
@@ -312,7 +313,7 @@ articulos:[
         productType: "licraD",
         fecha: "Junio 01, 2021",
         price: 10,
-        rating: 3,
+        rating: 5,
         image: licra5,
         sexo: "hembra",
         descripcion: "Licras para damas adaptadas a su estilo y comodidad"
@@ -345,7 +346,7 @@ articulos:[
         productType: "licraD",
         fecha: "Junio 01, 2021",
         price: 10,
-        rating: 3,
+        rating: 5,
         image: licra8,
         sexo: "hembra",
         descripcion: "Licras para damas adaptadas a su estilo y comodidad"
@@ -378,7 +379,7 @@ articulos:[
         productType: "licraD",
         fecha: "Junio 01, 2021",
         price: 10,
-        rating: 3,
+        rating: 4,
         image: licra11,
         sexo: "hembra",
         descripcion: "Licras para damas adaptadas a su estilo y comodidad"
@@ -393,6 +394,16 @@ articulos:[
         image: licra12,
         sexo: "hembra",
         descripcion: "Licras para damas adaptadas a su estilo y comodidad"
+    },
+    {
+        id: 34,
+        name: "Short Niños. ",
+        productType: "joggerN",
+        fecha: "Julio 01, 2021",
+        price: 4,
+        rating: 5,
+        image: sn,
+        descripcion: "short deportivos de excelente calidad para ejercitarse o estar comodamente en casa."
     },
     
 
