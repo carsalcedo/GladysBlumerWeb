@@ -11,20 +11,20 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const JoggerD = (props) =>  {
-  const {articulos, addproducto} = props;
+const ProductSection = (props) =>  {
+  const {articulos, addproducto, titleProduct} = props;
   const classes = useStyles();
-  const jogD = articulos.filter(arti => arti.productType == "joggerD" )
+  
 
 
   return (
     <div className={classes.root}>
      <Typography align='center' gutterBottom variant='h4' color='primary'>
-            Joggers para Damas
+            {titleProduct}
      </Typography>
 
       <Grid container spacing={1}>
-      {jogD.map(arti => (
+      {articulos.map(arti => (
          <Grid item xs={12} sm={6} md={3} lg={3}>
             <Tarjeta key={arti.id} arti={arti} addproducto={addproducto} />
          </Grid>))}
@@ -34,4 +34,4 @@ const JoggerD = (props) =>  {
   );
 }
 
-export default JoggerD;
+export default ProductSection;

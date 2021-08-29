@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './App.css';
 import {ThemeProvider} from '@material-ui/core/styles'
-import theme from './estiloconfig'
-import Navbarra from './componentes/Navbarra'
-import Galeria from './componentes/Galeria';
+import theme from './estiloconfig';
+import Navbarra from './componentes/Navbarra';
 import Inventario from './Inventario';
 import CheckoutPage from './componentes/CheckoutPage';
 import {
@@ -19,16 +18,9 @@ import Checkout from './componentes/Pagocompra/Checkout';
 import { auth } from './firebase';
 import { actionTypes } from './reducer';
 import {useStateValue} from './StateProvider';
-import {Hidden} from '@material-ui/core';
-import JoggerA from './componentes/JoogerA';
-import JoggerD from './componentes/JoggerD';
-import JoggerN from './componentes/JoggerN';
-import Salud from './componentes/Salud';
-import LicrasD from './componentes/LicrasD'
 import Principal from './componentes/Principal';
-import GaleriaH from  './componentes/GaleriaH';
-import GaleriaD from './componentes/GaleriaD';
 import CajonCar from './componentes/CajonCar';
+import ProductSection from './componentes/ProductSection'
 
 function App() {
   useEffect(() => {
@@ -46,6 +38,15 @@ function App() {
   const {articulos} = Inventario;
   const [artis, setArtis] = useState([]);
   const [{user}, dispatch] = useStateValue();
+
+  const shores = articulos.filter(arti => arti.productType == "Short" );
+  const dam = articulos.filter(arti => arti.sexo == "hembra" );
+  const hom = articulos.filter(arti => arti.sexo == "varon" );
+  const jogD = articulos.filter(arti => arti.productType == "joggerD" );
+  const jogN = articulos.filter(arti => arti.productType == "joggerN" );
+  const joggA = articulos.filter(arti => arti.productType == "joggerA" );
+  const licraD = articulos.filter(arti => arti.productType == "licraD" );
+  const salud = articulos.filter(arti => arti.productType == "salud" )
  
 
   const addproducto = (arti) => {
@@ -92,6 +93,7 @@ function App() {
   const desloguear = () =>{
     if(user){
       auth.signOut();
+      setArtis([]);
       dispatch({
         type: actionTypes.SET_USER,
         user: null,
@@ -152,35 +154,35 @@ function App() {
       </Route>
 
       <Route path='/JoggerA' >
-      <JoggerA articulos={articulos} addproducto={addproducto}/>
+      <ProductSection articulos={joggA} titleProduct='Joggers para Caballeros' addproducto={addproducto}/>
       </Route>
 
       <Route path='/JoggerD' >
-      <JoggerD articulos={articulos} addproducto={addproducto}/>
+      <ProductSection articulos={jogD} titleProduct='Joggers para Damas' addproducto={addproducto}/>
       </Route>
 
       <Route path='/LicrasD' >
-      <LicrasD articulos={articulos} addproducto={addproducto}/>
+      <ProductSection articulos={licraD} titleProduct='Leggis para Damas' addproducto={addproducto}/>
       </Route>
 
       <Route path='/JoggerN' >
-      <JoggerN articulos={articulos} addproducto={addproducto}/>
+      <ProductSection articulos={jogN} titleProduct='Joggers para Niños' addproducto={addproducto}/>
       </Route>
 
       <Route path='/Salud' >
-      <Salud articulos={articulos} addproducto={addproducto}/>
+      <ProductSection articulos={salud} titleProduct='lenceria Quirurgica' addproducto={addproducto}/>
       </Route>
 
       <Route path='/Galeria'>
-      <Galeria articulos={articulos} addproducto={addproducto}/>
+      <ProductSection articulos={shores} titleProduct='Short para Caballeros' addproducto={addproducto}/>
       </Route>
 
       <Route path='/GaleriaH'>
-      <GaleriaH articulos={articulos} addproducto={addproducto}/>
+      <ProductSection articulos={hom} titleProduct='Ropa para Caballeros' addproducto={addproducto}/>
       </Route>
 
       <Route path='/GaleriaD'>
-      <GaleriaD articulos={articulos} addproducto={addproducto}/>
+      <ProductSection articulos={dam} titleProduct='Ropa para Damas' addproducto={addproducto}/>
       </Route>
 
       <Route path='/' exact>
