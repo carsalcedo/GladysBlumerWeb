@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/GladysBlumerWeb/static/css/main.afa469a6.chunk.css",
-    "main.js": "/GladysBlumerWeb/static/js/main.5e72a680.chunk.js",
-    "main.js.map": "/GladysBlumerWeb/static/js/main.5e72a680.chunk.js.map",
+    "main.js": "/GladysBlumerWeb/static/js/main.cbac830b.chunk.js",
+    "main.js.map": "/GladysBlumerWeb/static/js/main.cbac830b.chunk.js.map",
     "runtime-main.js": "/GladysBlumerWeb/static/js/runtime-main.aa96675c.js",
     "runtime-main.js.map": "/GladysBlumerWeb/static/js/runtime-main.aa96675c.js.map",
-    "static/js/2.ff31e91f.chunk.js": "/GladysBlumerWeb/static/js/2.ff31e91f.chunk.js",
-    "static/js/2.ff31e91f.chunk.js.map": "/GladysBlumerWeb/static/js/2.ff31e91f.chunk.js.map",
+    "static/js/2.7f1a8982.chunk.js": "/GladysBlumerWeb/static/js/2.7f1a8982.chunk.js",
+    "static/js/2.7f1a8982.chunk.js.map": "/GladysBlumerWeb/static/js/2.7f1a8982.chunk.js.map",
     "index.html": "/GladysBlumerWeb/index.html",
     "static/css/main.afa469a6.chunk.css.map": "/GladysBlumerWeb/static/css/main.afa469a6.chunk.css.map",
-    "static/js/2.ff31e91f.chunk.js.LICENSE.txt": "/GladysBlumerWeb/static/js/2.ff31e91f.chunk.js.LICENSE.txt",
+    "static/js/2.7f1a8982.chunk.js.LICENSE.txt": "/GladysBlumerWeb/static/js/2.7f1a8982.chunk.js.LICENSE.txt",
     "static/media/10.354681b1.jpg": "/GladysBlumerWeb/static/media/10.354681b1.jpg",
     "static/media/11.ad4be8a6.jpg": "/GladysBlumerWeb/static/media/11.ad4be8a6.jpg",
     "static/media/12.cfd0263c.jpg": "/GladysBlumerWeb/static/media/12.cfd0263c.jpg",
@@ -58,8 +58,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.aa96675c.js",
-    "static/js/2.ff31e91f.chunk.js",
+    "static/js/2.7f1a8982.chunk.js",
     "static/css/main.afa469a6.chunk.css",
-    "static/js/main.5e72a680.chunk.js"
+    "static/js/main.cbac830b.chunk.js"
   ]
 }
