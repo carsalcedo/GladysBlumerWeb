@@ -185,7 +185,7 @@ function App() {
       <ProductSection articulos={dam} titleProduct='Ropa para Damas' addproducto={addproducto}/>
       </Route>
 
-      <Route path='/' exact>
+      <Route path='/'>
       <Principal/>
       </Route>
 
